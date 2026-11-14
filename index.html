@@ -1,1 +1,166 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio de Bioquímica</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fa;
+            color: #263849;
+        }
+
+        header {
+            background: #173b57;
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            color: #d7e8f3;
+        }
+
+        nav {
+            background: #ffffff;
+            padding: 16px;
+            text-align: center;
+            box-shadow: 0 2px 8px #00000010;
+        }
+
+        nav a {
+            color: #173b57;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .presentacion {
+            text-align: center;
+            padding: 45px 20px 25px;
+        }
+
+        .presentacion h2 {
+            margin-bottom: 15px;
+            color: #173b57;
+        }
+
+        .informes {
+            max-width: 1000px;
+            margin: auto;
+            padding: 25px 20px 50px;
+        }
+
+        .informes h2 {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .tarjeta h3 {
+            color: #173b57;
+            margin-bottom: 12px;
+        }
+
+        .tarjeta p {
+            margin-bottom: 18px;
+            color: #647586;
+        }
+
+        .tarjeta a {
+            display: inline-block;
+            background: #287da5;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #173b57;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Portafolio de Bioquímica</h1>
+        <p>Medicina Humana | Informes de laboratorio</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#informes">Mis informes</a>
+    </nav>
+
+    <section class="presentacion" id="inicio">
+        <h2>Bienvenidos a mi portafolio académico</h2>
+        <p>
+            En este espacio encontrarás mis informes,
+            prácticas y actividades del curso de Bioquímica.
+        </p>
+    </section>
+
+    <section class="informes" id="informes">
+        <h2>Mis informes de laboratorio</h2>
+
+        <div class="contenedor">
+
+            <div class="tarjeta">
+                <h3>Informe 01</h3>
+                <p>Bioseguridad y espectrofotometría.</p>
+                <a href="informes/informe-01.pdf">Ver informe</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Informe 02</h3>
+                <p>Identificación cualitativa de carbohidratos.</p>
+                <a href="informes/informe-02.pdf">Ver informe</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Informe 03</h3>
+                <p>Determinación de glucosa GOD-PAP.</p>
+                <a href="informes/informe-03.pdf">Ver informe</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Portafolio académico de Bioquímica - Medicina Humana</p>
+    </footer>
+
+</body>
+</html>
+
