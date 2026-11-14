@@ -2,165 +2,235 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio de Bioquímica</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio de Bioquímica</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fa;
-            color: #263849;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: #F7FAF5;
+    color: #344C3A;
+}
 
-        header {
-            background: #173b57;
-            color: white;
-            padding: 35px 20px;
-            text-align: center;
-        }
+header {
+    background: #E3EFE2;
+    padding: 30px 8%;
+}
 
-        header h1 {
-            font-size: 32px;
-            margin-bottom: 12px;
-        }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
-        header p {
-            color: #d7e8f3;
-        }
+.logo {
+    color: #41664B;
+    font-size: 22px;
+    font-weight: bold;
+}
 
-        nav {
-            background: #ffffff;
-            padding: 16px;
-            text-align: center;
-            box-shadow: 0 2px 8px #00000010;
-        }
+nav a {
+    color: #41664B;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
 
-        nav a {
-            color: #173b57;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+.hero {
+    padding: 75px 8%;
+    background: linear-gradient(120deg, #E3EFE2, #F5F8EE);
+}
 
-        .presentacion {
-            text-align: center;
-            padding: 45px 20px 25px;
-        }
+.hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    color: #315B3D;
+    max-width: 650px;
+    margin-bottom: 18px;
+}
 
-        .presentacion h2 {
-            margin-bottom: 15px;
-            color: #173b57;
-        }
+.hero p {
+    max-width: 600px;
+    line-height: 1.8;
+    color: #607565;
+    font-size: 16px;
+}
 
-        .informes {
-            max-width: 1000px;
-            margin: auto;
-            padding: 25px 20px 50px;
-        }
+.etiqueta {
+    color: #64866A;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
 
-        .informes h2 {
-            margin-bottom: 25px;
-            text-align: center;
-        }
+.contenido {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
 
-        .contenedor {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 20px;
-        }
+.contenido h2 {
+    color: #315B3D;
+    margin-bottom: 12px;
+}
 
-        .tarjeta {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px #00000010;
-        }
+.descripcion {
+    color: #788879;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
 
-        .tarjeta h3 {
-            color: #173b57;
-            margin-bottom: 12px;
-        }
+.tarjeta {
+    background: white;
+    border: 1px solid #DDE9DA;
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 520px;
+    box-shadow: 0 5px 20px #315B3D10;
+    transition: transform 0.2s;
+}
 
-        .tarjeta p {
-            margin-bottom: 18px;
-            color: #647586;
-        }
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
 
-        .tarjeta a {
-            display: inline-block;
-            background: #287da5;
-            color: white;
-            padding: 10px 16px;
-            border-radius: 6px;
-            text-decoration: none;
-        }
+.imagen {
+    background: #DCEBDD;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+}
 
-        footer {
-            background: #173b57;
-            color: white;
-            text-align: center;
-            padding: 22px;
-        }
-    </style>
+.detalle {
+    padding: 25px;
+}
+
+.unidad {
+    display: inline-block;
+    background: #E5F1E4;
+    color: #47734E;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.detalle h3 {
+    color: #315B3D;
+    margin-bottom: 12px;
+}
+
+.detalle p {
+    color: #718073;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.boton {
+    display: inline-block;
+    background: #668D6B;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.boton:hover {
+    background: #426C4B;
+}
+
+footer {
+    background: #E3EFE2;
+    color: #58725B;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
+
+@media(max-width: 600px) {
+    nav {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+
+    .hero {
+        padding: 50px 7%;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Mi Portafolio de Bioquímica</h1>
-        <p>Medicina Humana | Informes de laboratorio</p>
-    </header>
-
+<header>
     <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#informes">Mis informes</a>
-    </nav>
-
-    <section class="presentacion" id="inicio">
-        <h2>Bienvenidos a mi portafolio académico</h2>
-        <p>
-            En este espacio encontrarás mis informes,
-            prácticas y actividades del curso de Bioquímica.
-        </p>
-    </section>
-
-    <section class="informes" id="informes">
-        <h2>Mis informes de laboratorio</h2>
-
-        <div class="contenedor">
-
-            <div class="tarjeta">
-                <h3>Informe 01</h3>
-                <p>Bioseguridad y espectrofotometría.</p>
-                <a href="informes/informe-01.pdf">Ver informe</a>
-            </div>
-
-            <div class="tarjeta">
-                <h3>Informe 02</h3>
-                <p>Identificación cualitativa de carbohidratos.</p>
-                <a href="informes/informe-02.pdf">Ver informe</a>
-            </div>
-
-            <div class="tarjeta">
-                <h3>Informe 03</h3>
-                <p>Determinación de glucosa GOD-PAP.</p>
-                <a href="informes/informe-03.pdf">Ver informe</a>
-            </div>
-
+        <div class="logo">🌿 BIOQUÍMICA</div>
+        <div>
+            <a href="#inicio">Inicio</a>
+            <a href="#informes">Informes</a>
         </div>
-    </section>
+    </nav>
+</header>
 
-    <footer>
-        <p>Portafolio académico de Bioquímica - Medicina Humana</p>
-    </footer>
+<section class="hero" id="inicio">
+    <div class="etiqueta">PORTAFOLIO ACADÉMICO</div>
+    <h1>Explorando la Bioquímica</h1>
+    <p>
+        De la teoría a la práctica: un espacio dedicado
+        al aprendizaje, la experimentación y la comprensión
+        de los procesos bioquímicos fundamentales para
+        la Medicina Humana.
+    </p>
+</section>
+
+<main class="contenido" id="informes">
+    <div class="etiqueta">PORTAFOLIO DE LABORATORIO</div>
+    <h2>Mis prácticas de laboratorio</h2>
+    <p class="descripcion">
+        Cada experiencia representa una oportunidad para
+        descubrir, analizar y comprender la bioquímica
+        desde una perspectiva experimental.
+    </p>
+
+    <article class="tarjeta">
+        <div class="imagen">🧪</div>
+        <div class="detalle">
+            <span class="unidad">SEGUNDA UNIDAD · INFORME 08</span>
+            <h3>Práctica de laboratorio N.º 08</h3>
+            <p>
+                Primera práctica de la segunda unidad.
+                Explora la introducción, los objetivos,
+                materiales, procedimiento experimental,
+                resultados y análisis.
+            </p>
+            <a class="boton" href="informe-08.html">
+                Explorar informe →
+            </a>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <p>Portafolio académico de Bioquímica</p>
+    <p>Medicina Humana · Aprendizaje y experimentación</p>
+</footer>
 
 </body>
 </html>
-
